@@ -10,3 +10,15 @@ def count_chars (text):
         else:
             counter[text[i]] = 1  
     return counter
+def sorted_list(counter):
+    list = []
+    for i in counter:
+        if i.isalpha():
+            list.append({"char" : i, "num" : counter[i]})
+        else:
+            continue
+    list.sort(reverse=True, key=sort_on)
+    return list
+
+def sort_on(items):
+    return items["num"]   
