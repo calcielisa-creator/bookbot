@@ -8,8 +8,8 @@ def main ():
     num_words = count_words(f)
     counter = count_chars(f)
     print("============ BOOKBOT ============\nAnalyzing book found at books/frankenstein.txt...\n----------- Word Count ----------\nFound", num_words, "total words\n--------- Character Count -------")
-    list = sorted_list(counter)
+    list = sorted_list(counter) 
     for d in list:
-        print(f"{d['char']}: {d["num"]}")
+        print(f"{d['char']}: {d['num']}")
     print("============= END ===============")
 main ()
